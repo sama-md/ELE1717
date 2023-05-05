@@ -31,7 +31,13 @@ Este repositório contém o material de suporte utilizado na componente curricul
 - Circuito de um somador completo de 1bit ([cl_add_full.vhd](https://github.com/sama-md/ELE1717/blob/master/hdl/block/cl_add_full.vhd))
 
 **VHDL** auxiliar
+
 - Circuito de um divisor de clock ([fp_div_clock.vhd](https://github.com/sama-md/ELE1717/blob/master/hdl/block/fp_div_clock.vhd))
+
+**AVR** introdução ao ATMega328P em assembly
+
+- Código fonte para piscar um led na porta PB5 ([blink_led.asm](https://github.com/sama-md/ELE1717/blob/master/avr/asm/blink_led.asm))
+- Código fonte para ajustar pwm por entrada analógica ([ad_timer2_pwm.asm](https://github.com/sama-md/ELE1717/blob/master/avr/asm/blink_led.asm))
 
 ---
 ### Licença

@@ -37,7 +37,7 @@ Este repositório contém o material de suporte utilizado na componente curricul
 **AVR** introdução ao ATMega328P em assembly
 
 - Código fonte para piscar um led na porta PB5 ([blink_led.asm](https://github.com/sama-md/ELE1717/blob/master/avr/asm/blink_led.asm))
-- Código fonte para ajustar pwm por entrada analógica ([ad_timer2_pwm.asm](https://github.com/sama-md/ELE1717/blob/master/avr/asm/blink_led.asm))
+- Código fonte para ajustar pwm por entrada analógica ([ad_timer2_pwm.asm](https://github.com/sama-md/ELE1717/blob/master/avr/asm/ad_timer2_pwm.asm))
 
 ---
 ### Licença

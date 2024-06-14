@@ -1,0 +1,54 @@
+//
+// Copyright (C) 2023 Samaherni M. D.
+// Universidade Federal do Rio Grande do Norte (UFRN)
+// 
+// This file is part of ELE1717 project (https://github.com/sama-md/ELE1717/). 
+// It is subject to the license terms in the LICENSE file found in the top-level 
+// directory of this distribution. 
+//
+// Licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 
+// 4.0 International License;
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//  (EN)  https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+//  (PT)  https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.pt
+//
+// Unless otherwise separately undertaken by the Licensor, to the extent possible, 
+// the Licensor offers the Licensed Material "as-is" and "as-available", and makes
+// no representations or warranties of any kind concerning the Licensed Material, 
+// whether express, implied, statutory, or other.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+#define F_CPU 16000000UL                
+#include <avr/io.h>                     
+#include <util/delay.h>                 
+
+#define LED_OFF 0 						
+#define LED_ON 1 						
+volatile uint8_t mde_st = LED_OFF;		
+
+int main(void)            				
+{
+   DDRB = 0b00100000;     				
+
+   while(1)               				
+   {
+      switch (mde_st)					
+      {
+         case LED_OFF:
+            PORTB=0x00;					
+            mde_st = LED_ON;			
+            break;
+         case LED_ON:
+            PORTB=0xff;					
+            mde_st = LED_OFF;			
+            break;
+         default:						
+            break;
+      }
+      _delay_ms(500);      				
+   }
+}

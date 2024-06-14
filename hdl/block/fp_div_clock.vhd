@@ -39,7 +39,7 @@ begin
       variable cnt: integer range 0 to 13500000 := 0;
    begin
       if (rising_edge(ck_in)) then
-         if (cnt=3) then
+         if (cnt=13500000) then
             cnt:=0;
             ax <= not ax;
          else

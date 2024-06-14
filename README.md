@@ -39,6 +39,14 @@ Este repositório contém o material de suporte utilizado na componente curricul
 - Código fonte para piscar um led na porta PB5 ([blink_led.asm](https://github.com/sama-md/ELE1717/blob/master/avr/asm/blink_led.asm))
 - Código fonte para ajustar pwm por entrada analógica ([ad_timer2_pwm.asm](https://github.com/sama-md/ELE1717/blob/master/avr/asm/ad_timer2_pwm.asm))
 
+**AVR** introdução ao ATMega328P em Ansi C
+
+- Código fonte para piscar um led na porta PB5 ([blink_led.c](https://github.com/sama-md/ELE1717/blob/master/avr/c/blink_led.c))
+- Código fonte para piscar um led na porta PB5 com tempo definido pelo A/D ([blink_led_ad.c](https://github.com/sama-md/ELE1717/blob/master/avr/c/blink_led_ad.c))
+- Código fonte para habilitar uma interrupção externa ([external_interrupt.c](https://github.com/sama-md/ELE1717/blob/master/avr/c/external_interrupt.c))
+- Código fonte para habilitar uma interrupção no timer 1 ([timer1_ocra.c](https://github.com/sama-md/ELE1717/blob/master/avr/c/timer1_ocra.c))
+- Código fonte para implementar uma MDE por Switch Case ([mde_switch_case.c](https://github.com/sama-md/ELE1717/blob/master/avr/c/mde_switch_case.c))
+
 ---
 ### Licença
 
